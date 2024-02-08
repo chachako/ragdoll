@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2BD67752B7501A6000B142A /* RagdollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD67742B7501A6000B142A /* RagdollApp.swift */; };
+		E2BD67772B7501A6000B142A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD67762B7501A6000B142A /* ContentView.swift */; };
+		E2BD67792B7501A7000B142A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2BD67782B7501A7000B142A /* Assets.xcassets */; };
+		E2BD677C2B7501A7000B142A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2BD677B2B7501A7000B142A /* Preview Assets.xcassets */; };
+		E2BD67872B7501A7000B142A /* RagdollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD67862B7501A7000B142A /* RagdollTests.swift */; };
+		E2BD67912B7501A7000B142A /* RagdollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD67902B7501A7000B142A /* RagdollUITests.swift */; };
+		E2BD67932B7501A7000B142A /* RagdollUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD67922B7501A7000B142A /* RagdollUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2BD67832B7501A7000B142A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2BD67692B7501A6000B142A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2BD67702B7501A6000B142A;
+			remoteInfo = Ragdoll;
+		};
+		E2BD678D2B7501A7000B142A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2BD67692B7501A6000B142A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2BD67702B7501A6000B142A;
+			remoteInfo = Ragdoll;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E2BD67712B7501A6000B142A /* Ragdoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ragdoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2BD67742B7501A6000B142A /* RagdollApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagdollApp.swift; sourceTree = "<group>"; };
+		E2BD67762B7501A6000B142A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E2BD67782B7501A7000B142A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2BD677B2B7501A7000B142A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E2BD677D2B7501A7000B142A /* Ragdoll.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ragdoll.entitlements; sourceTree = "<group>"; };
+		E2BD67822B7501A7000B142A /* RagdollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RagdollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2BD67862B7501A7000B142A /* RagdollTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagdollTests.swift; sourceTree = "<group>"; };
+		E2BD678C2B7501A7000B142A /* RagdollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RagdollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2BD67902B7501A7000B142A /* RagdollUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagdollUITests.swift; sourceTree = "<group>"; };
+		E2BD67922B7501A7000B142A /* RagdollUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagdollUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2BD676E2B7501A6000B142A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2BD677F2B7501A7000B142A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2BD67892B7501A7000B142A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2BD67682B7501A6000B142A = {
+			isa = PBXGroup;
+			children = (
+				E2BD67732B7501A6000B142A /* Ragdoll */,
+				E2BD67852B7501A7000B142A /* RagdollTests */,
+				E2BD678F2B7501A7000B142A /* RagdollUITests */,
+				E2BD67722B7501A6000B142A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2BD67722B7501A6000B142A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2BD67712B7501A6000B142A /* Ragdoll.app */,
+				E2BD67822B7501A7000B142A /* RagdollTests.xctest */,
+				E2BD678C2B7501A7000B142A /* RagdollUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2BD67732B7501A6000B142A /* Ragdoll */ = {
+			isa = PBXGroup;
+			children = (
+				E2BD67742B7501A6000B142A /* RagdollApp.swift */,
+				E2BD67762B7501A6000B142A /* ContentView.swift */,
+				E2BD67782B7501A7000B142A /* Assets.xcassets */,
+				E2BD677D2B7501A7000B142A /* Ragdoll.entitlements */,
+				E2BD677A2B7501A7000B142A /* Preview Content */,
+			);
+			path = Ragdoll;
+			sourceTree = "<group>";
+		};
+		E2BD677A2B7501A7000B142A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E2BD677B2B7501A7000B142A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E2BD67852B7501A7000B142A /* RagdollTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2BD67862B7501A7000B142A /* RagdollTests.swift */,
+			);
+			path = RagdollTests;
+			sourceTree = "<group>";
+		};
+		E2BD678F2B7501A7000B142A /* RagdollUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2BD67902B7501A7000B142A /* RagdollUITests.swift */,
+				E2BD67922B7501A7000B142A /* RagdollUITestsLaunchTests.swift */,
+			);
+			path = RagdollUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2BD67702B7501A6000B142A /* Ragdoll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2BD67962B7501A7000B142A /* Build configuration list for PBXNativeTarget "Ragdoll" */;
+			buildPhases = (
+				E2BD676D2B7501A6000B142A /* Sources */,
+				E2BD676E2B7501A6000B142A /* Frameworks */,
+				E2BD676F2B7501A6000B142A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ragdoll;
+			productName = Ragdoll;
+			productReference = E2BD67712B7501A6000B142A /* Ragdoll.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2BD67812B7501A7000B142A /* RagdollTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2BD67992B7501A7000B142A /* Build configuration list for PBXNativeTarget "RagdollTests" */;
+			buildPhases = (
+				E2BD677E2B7501A7000B142A /* Sources */,
+				E2BD677F2B7501A7000B142A /* Frameworks */,
+				E2BD67802B7501A7000B142A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2BD67842B7501A7000B142A /* PBXTargetDependency */,
+			);
+			name = RagdollTests;
+			productName = RagdollTests;
+			productReference = E2BD67822B7501A7000B142A /* RagdollTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2BD678B2B7501A7000B142A /* RagdollUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2BD679C2B7501A7000B142A /* Build configuration list for PBXNativeTarget "RagdollUITests" */;
+			buildPhases = (
+				E2BD67882B7501A7000B142A /* Sources */,
+				E2BD67892B7501A7000B142A /* Frameworks */,
+				E2BD678A2B7501A7000B142A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2BD678E2B7501A7000B142A /* PBXTargetDependency */,
+			);
+			name = RagdollUITests;
+			productName = RagdollUITests;
+			productReference = E2BD678C2B7501A7000B142A /* RagdollUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2BD67692B7501A6000B142A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					E2BD67702B7501A6000B142A = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					E2BD67812B7501A7000B142A = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = E2BD67702B7501A6000B142A;
+					};
+					E2BD678B2B7501A7000B142A = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = E2BD67702B7501A6000B142A;
+					};
+				};
+			};
+			buildConfigurationList = E2BD676C2B7501A6000B142A /* Build configuration list for PBXProject "Ragdoll" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2BD67682B7501A6000B142A;
+			productRefGroup = E2BD67722B7501A6000B142A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2BD67702B7501A6000B142A /* Ragdoll */,
+				E2BD67812B7501A7000B142A /* RagdollTests */,
+				E2BD678B2B7501A7000B142A /* RagdollUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2BD676F2B7501A6000B142A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2BD677C2B7501A7000B142A /* Preview Assets.xcassets in Resources */,
+				E2BD67792B7501A7000B142A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2BD67802B7501A7000B142A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2BD678A2B7501A7000B142A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2BD676D2B7501A6000B142A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2BD67772B7501A6000B142A /* ContentView.swift in Sources */,
+				E2BD67752B7501A6000B142A /* RagdollApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2BD677E2B7501A7000B142A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2BD67872B7501A7000B142A /* RagdollTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2BD67882B7501A7000B142A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2BD67932B7501A7000B142A /* RagdollUITestsLaunchTests.swift in Sources */,
+				E2BD67912B7501A7000B142A /* RagdollUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2BD67842B7501A7000B142A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2BD67702B7501A6000B142A /* Ragdoll */;
+			targetProxy = E2BD67832B7501A7000B142A /* PBXContainerItemProxy */;
+		};
+		E2BD678E2B7501A7000B142A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2BD67702B7501A6000B142A /* Ragdoll */;
+			targetProxy = E2BD678D2B7501A7000B142A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E2BD67942B7501A7000B142A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2BD67952B7501A7000B142A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		E2BD67972B7501A7000B142A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Ragdoll/Ragdoll.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ragdoll/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chachako.Ragdoll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E2BD67982B7501A7000B142A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Ragdoll/Ragdoll.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ragdoll/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chachako.Ragdoll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E2BD679A2B7501A7000B142A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chachako.RagdollTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ragdoll.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ragdoll";
+			};
+			name = Debug;
+		};
+		E2BD679B2B7501A7000B142A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chachako.RagdollTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ragdoll.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ragdoll";
+			};
+			name = Release;
+		};
+		E2BD679D2B7501A7000B142A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chachako.RagdollUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Ragdoll;
+			};
+			name = Debug;
+		};
+		E2BD679E2B7501A7000B142A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chachako.RagdollUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Ragdoll;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2BD676C2B7501A6000B142A /* Build configuration list for PBXProject "Ragdoll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2BD67942B7501A7000B142A /* Debug */,
+				E2BD67952B7501A7000B142A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2BD67962B7501A7000B142A /* Build configuration list for PBXNativeTarget "Ragdoll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2BD67972B7501A7000B142A /* Debug */,
+				E2BD67982B7501A7000B142A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2BD67992B7501A7000B142A /* Build configuration list for PBXNativeTarget "RagdollTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2BD679A2B7501A7000B142A /* Debug */,
+				E2BD679B2B7501A7000B142A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2BD679C2B7501A7000B142A /* Build configuration list for PBXNativeTarget "RagdollUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2BD679D2B7501A7000B142A /* Debug */,
+				E2BD679E2B7501A7000B142A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2BD67692B7501A6000B142A /* Project object */;
+}
