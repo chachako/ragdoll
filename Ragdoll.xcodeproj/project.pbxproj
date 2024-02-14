@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1809C50D20F6AE1D1739E26D /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1809CD9B7D243190221E374C /* Collection.swift */; };
+		1809C7D8464536DB7678F30D /* DuplicatedDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1809C122D5F6E0647C2A286D /* DuplicatedDictionaryTests.swift */; };
+		1809CA58ECF448FDFB6319F2 /* DuplicatedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1809CEADDE82835F6CC0FE02 /* DuplicatedDictionary.swift */; };
 		1809CCB9B55E50D04746EC1A /* ChapterRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1809CBFE62C0B4D5E37394BC /* ChapterRuleTests.swift */; };
 		E20C22B02B79697800944B60 /* RagdollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C22AF2B79697800944B60 /* RagdollApp.swift */; };
 		E20C22B22B79697800944B60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C22B12B79697800944B60 /* ContentView.swift */; };
@@ -50,7 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1809C122D5F6E0647C2A286D /* DuplicatedDictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuplicatedDictionaryTests.swift; sourceTree = "<group>"; };
 		1809CBFE62C0B4D5E37394BC /* ChapterRuleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterRuleTests.swift; sourceTree = "<group>"; };
+		1809CD9B7D243190221E374C /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		1809CEADDE82835F6CC0FE02 /* DuplicatedDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuplicatedDictionary.swift; sourceTree = "<group>"; };
 		E20C22AC2B79697800944B60 /* Ragdoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ragdoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20C22AF2B79697800944B60 /* RagdollApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagdollApp.swift; sourceTree = "<group>"; };
 		E20C22B12B79697800944B60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -155,6 +161,7 @@
 				E20C22C32B79697900944B60 /* RagdollTests.swift */,
 				E20C22F52B796DF600944B60 /* BookParserTests.swift */,
 				1809CBFE62C0B4D5E37394BC /* ChapterRuleTests.swift */,
+				1809C122D5F6E0647C2A286D /* DuplicatedDictionaryTests.swift */,
 			);
 			path = RagdollTests;
 			sourceTree = "<group>";
@@ -197,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				E20C22E62B796AF900944B60 /* Book */,
+				1809CEADDE82835F6CC0FE02 /* DuplicatedDictionary.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -235,6 +243,7 @@
 			children = (
 				E230923A2B7BFB100044C0CD /* Data.swift */,
 				E230923C2B7C03630044C0CD /* String.swift */,
+				1809CD9B7D243190221E374C /* Collection.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -400,6 +409,8 @@
 				E20C22B02B79697800944B60 /* RagdollApp.swift in Sources */,
 				E20C22F32B796AF900944B60 /* BookManager.swift in Sources */,
 				E20C22F02B796AF900944B60 /* Chapter.swift in Sources */,
+				1809CA58ECF448FDFB6319F2 /* DuplicatedDictionary.swift in Sources */,
+				1809C50D20F6AE1D1739E26D /* Collection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +421,7 @@
 				E20C22C42B79697900944B60 /* RagdollTests.swift in Sources */,
 				E20C22F62B796DF600944B60 /* BookParserTests.swift in Sources */,
 				1809CCB9B55E50D04746EC1A /* ChapterRuleTests.swift in Sources */,
+				1809C7D8464536DB7678F30D /* DuplicatedDictionaryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +455,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -473,7 +484,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -508,7 +518,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -538,7 +547,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -569,7 +577,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Ragdoll/Preview Content\"";
 				DEVELOPMENT_TEAM = 5UU658JJ6L;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -598,7 +605,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Ragdoll/Preview Content\"";
 				DEVELOPMENT_TEAM = 5UU658JJ6L;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -625,7 +631,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5UU658JJ6L;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -645,7 +650,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5UU658JJ6L;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -664,7 +668,6 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5UU658JJ6L;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -682,7 +685,6 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5UU658JJ6L;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
