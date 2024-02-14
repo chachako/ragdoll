@@ -8,7 +8,7 @@
 import Foundation
 
 /// A helper class for file system operations within the app's private directory.
-class FileHelper {
+final class FileHelper {
   static var privateDirectory: URL? {
     return FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first
   }

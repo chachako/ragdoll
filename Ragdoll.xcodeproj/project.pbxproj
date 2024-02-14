@@ -7,62 +7,94 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E2BD67752B7501A6000B142A /* RagdollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD67742B7501A6000B142A /* RagdollApp.swift */; };
-		E2BD67772B7501A6000B142A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD67762B7501A6000B142A /* ContentView.swift */; };
-		E2BD67792B7501A7000B142A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2BD67782B7501A7000B142A /* Assets.xcassets */; };
-		E2BD677C2B7501A7000B142A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2BD677B2B7501A7000B142A /* Preview Assets.xcassets */; };
-		E2BD67872B7501A7000B142A /* RagdollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD67862B7501A7000B142A /* RagdollTests.swift */; };
-		E2BD67912B7501A7000B142A /* RagdollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD67902B7501A7000B142A /* RagdollUITests.swift */; };
-		E2BD67932B7501A7000B142A /* RagdollUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD67922B7501A7000B142A /* RagdollUITestsLaunchTests.swift */; };
+		1809CCB9B55E50D04746EC1A /* ChapterRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1809CBFE62C0B4D5E37394BC /* ChapterRuleTests.swift */; };
+		E20C22B02B79697800944B60 /* RagdollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C22AF2B79697800944B60 /* RagdollApp.swift */; };
+		E20C22B22B79697800944B60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C22B12B79697800944B60 /* ContentView.swift */; };
+		E20C22B42B79697800944B60 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C22B32B79697800944B60 /* Item.swift */; };
+		E20C22B62B79697900944B60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20C22B52B79697900944B60 /* Assets.xcassets */; };
+		E20C22B92B79697900944B60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20C22B82B79697900944B60 /* Preview Assets.xcassets */; };
+		E20C22C42B79697900944B60 /* RagdollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C22C32B79697900944B60 /* RagdollTests.swift */; };
+		E20C22CE2B79697900944B60 /* RagdollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C22CD2B79697900944B60 /* RagdollUITests.swift */; };
+		E20C22D02B79697900944B60 /* RagdollUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C22CF2B79697900944B60 /* RagdollUITestsLaunchTests.swift */; };
+		E20C22E32B796ADD00944B60 /* ReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C22E02B796ADD00944B60 /* ReadingView.swift */; };
+		E20C22E42B796ADD00944B60 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C22E22B796ADD00944B60 /* HomeView.swift */; };
+		E20C22EF2B796AF900944B60 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C22E72B796AF900944B60 /* Book.swift */; };
+		E20C22F02B796AF900944B60 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C22E82B796AF900944B60 /* Chapter.swift */; };
+		E20C22F12B796AF900944B60 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C22EA2B796AF900944B60 /* FileHelper.swift */; };
+		E20C22F32B796AF900944B60 /* BookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C22ED2B796AF900944B60 /* BookManager.swift */; };
+		E20C22F42B796AF900944B60 /* BookParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C22EE2B796AF900944B60 /* BookParser.swift */; };
+		E20C22F62B796DF600944B60 /* BookParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C22F52B796DF600944B60 /* BookParserTests.swift */; };
+		E230923B2B7BFB100044C0CD /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230923A2B7BFB100044C0CD /* Data.swift */; };
+		E230923D2B7C03630044C0CD /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230923C2B7C03630044C0CD /* String.swift */; };
+		E23092412B7C0CFA0044C0CD /* UserConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23092402B7C0CFA0044C0CD /* UserConfigs.swift */; };
+		E23092442B7C0D7F0044C0CD /* UserConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23092432B7C0D7F0044C0CD /* UserConfig.swift */; };
+		E230924A2B7C1DBF0044C0CD /* ChapterTitleRules.json in Resources */ = {isa = PBXBuildFile; fileRef = E23092492B7C1DBF0044C0CD /* ChapterTitleRules.json */; };
+		E230924F2B7CC87B0044C0CD /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = E230924E2B7CC87B0044C0CD /* Defaults */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E2BD67832B7501A7000B142A /* PBXContainerItemProxy */ = {
+		E20C22C02B79697900944B60 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E2BD67692B7501A6000B142A /* Project object */;
+			containerPortal = E20C22A42B79697800944B60 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E2BD67702B7501A6000B142A;
+			remoteGlobalIDString = E20C22AB2B79697800944B60;
 			remoteInfo = Ragdoll;
 		};
-		E2BD678D2B7501A7000B142A /* PBXContainerItemProxy */ = {
+		E20C22CA2B79697900944B60 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E2BD67692B7501A6000B142A /* Project object */;
+			containerPortal = E20C22A42B79697800944B60 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E2BD67702B7501A6000B142A;
+			remoteGlobalIDString = E20C22AB2B79697800944B60;
 			remoteInfo = Ragdoll;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E2BD67712B7501A6000B142A /* Ragdoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ragdoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2BD67742B7501A6000B142A /* RagdollApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagdollApp.swift; sourceTree = "<group>"; };
-		E2BD67762B7501A6000B142A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E2BD67782B7501A7000B142A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E2BD677B2B7501A7000B142A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E2BD677D2B7501A7000B142A /* Ragdoll.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ragdoll.entitlements; sourceTree = "<group>"; };
-		E2BD67822B7501A7000B142A /* RagdollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RagdollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2BD67862B7501A7000B142A /* RagdollTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagdollTests.swift; sourceTree = "<group>"; };
-		E2BD678C2B7501A7000B142A /* RagdollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RagdollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2BD67902B7501A7000B142A /* RagdollUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagdollUITests.swift; sourceTree = "<group>"; };
-		E2BD67922B7501A7000B142A /* RagdollUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagdollUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1809CBFE62C0B4D5E37394BC /* ChapterRuleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterRuleTests.swift; sourceTree = "<group>"; };
+		E20C22AC2B79697800944B60 /* Ragdoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ragdoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20C22AF2B79697800944B60 /* RagdollApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagdollApp.swift; sourceTree = "<group>"; };
+		E20C22B12B79697800944B60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E20C22B32B79697800944B60 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		E20C22B52B79697900944B60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E20C22B82B79697900944B60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E20C22BA2B79697900944B60 /* Ragdoll.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ragdoll.entitlements; sourceTree = "<group>"; };
+		E20C22BF2B79697900944B60 /* RagdollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RagdollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20C22C32B79697900944B60 /* RagdollTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagdollTests.swift; sourceTree = "<group>"; };
+		E20C22C92B79697900944B60 /* RagdollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RagdollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20C22CD2B79697900944B60 /* RagdollUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagdollUITests.swift; sourceTree = "<group>"; };
+		E20C22CF2B79697900944B60 /* RagdollUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagdollUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E20C22E02B796ADD00944B60 /* ReadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingView.swift; sourceTree = "<group>"; };
+		E20C22E22B796ADD00944B60 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E20C22E72B796AF900944B60 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		E20C22E82B796AF900944B60 /* Chapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		E20C22EA2B796AF900944B60 /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		E20C22ED2B796AF900944B60 /* BookManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookManager.swift; sourceTree = "<group>"; };
+		E20C22EE2B796AF900944B60 /* BookParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookParser.swift; sourceTree = "<group>"; };
+		E20C22F52B796DF600944B60 /* BookParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookParserTests.swift; sourceTree = "<group>"; };
+		E230923A2B7BFB100044C0CD /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		E230923C2B7C03630044C0CD /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		E23092402B7C0CFA0044C0CD /* UserConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfigs.swift; sourceTree = "<group>"; };
+		E23092432B7C0D7F0044C0CD /* UserConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfig.swift; sourceTree = "<group>"; };
+		E23092492B7C1DBF0044C0CD /* ChapterTitleRules.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChapterTitleRules.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E2BD676E2B7501A6000B142A /* Frameworks */ = {
+		E20C22A92B79697800944B60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E230924F2B7CC87B0044C0CD /* Defaults in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20C22BC2B79697900944B60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2BD677F2B7501A7000B142A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E2BD67892B7501A7000B142A /* Frameworks */ = {
+		E20C22C62B79697900944B60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,143 +104,233 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E2BD67682B7501A6000B142A = {
+		E20C22A32B79697800944B60 = {
 			isa = PBXGroup;
 			children = (
-				E2BD67732B7501A6000B142A /* Ragdoll */,
-				E2BD67852B7501A7000B142A /* RagdollTests */,
-				E2BD678F2B7501A7000B142A /* RagdollUITests */,
-				E2BD67722B7501A6000B142A /* Products */,
+				E20C22AE2B79697800944B60 /* Ragdoll */,
+				E20C22C22B79697900944B60 /* RagdollTests */,
+				E20C22CC2B79697900944B60 /* RagdollUITests */,
+				E20C22AD2B79697800944B60 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E2BD67722B7501A6000B142A /* Products */ = {
+		E20C22AD2B79697800944B60 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E2BD67712B7501A6000B142A /* Ragdoll.app */,
-				E2BD67822B7501A7000B142A /* RagdollTests.xctest */,
-				E2BD678C2B7501A7000B142A /* RagdollUITests.xctest */,
+				E20C22AC2B79697800944B60 /* Ragdoll.app */,
+				E20C22BF2B79697900944B60 /* RagdollTests.xctest */,
+				E20C22C92B79697900944B60 /* RagdollUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E2BD67732B7501A6000B142A /* Ragdoll */ = {
+		E20C22AE2B79697800944B60 /* Ragdoll */ = {
 			isa = PBXGroup;
 			children = (
-				E2BD67742B7501A6000B142A /* RagdollApp.swift */,
-				E2BD67762B7501A6000B142A /* ContentView.swift */,
-				E2BD67782B7501A7000B142A /* Assets.xcassets */,
-				E2BD677D2B7501A7000B142A /* Ragdoll.entitlements */,
-				E2BD677A2B7501A7000B142A /* Preview Content */,
+				E23092482B7C1D730044C0CD /* Configs */,
+				E20C22E52B796AF900944B60 /* Models */,
+				E20C22E92B796AF900944B60 /* Utils */,
+				E20C22DE2B796ADD00944B60 /* Features */,
+				E20C22AF2B79697800944B60 /* RagdollApp.swift */,
+				E20C22B12B79697800944B60 /* ContentView.swift */,
+				E20C22B32B79697800944B60 /* Item.swift */,
+				E20C22B52B79697900944B60 /* Assets.xcassets */,
+				E20C22BA2B79697900944B60 /* Ragdoll.entitlements */,
+				E20C22B72B79697900944B60 /* Preview Content */,
 			);
 			path = Ragdoll;
 			sourceTree = "<group>";
 		};
-		E2BD677A2B7501A7000B142A /* Preview Content */ = {
+		E20C22B72B79697900944B60 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				E2BD677B2B7501A7000B142A /* Preview Assets.xcassets */,
+				E20C22B82B79697900944B60 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		E2BD67852B7501A7000B142A /* RagdollTests */ = {
+		E20C22C22B79697900944B60 /* RagdollTests */ = {
 			isa = PBXGroup;
 			children = (
-				E2BD67862B7501A7000B142A /* RagdollTests.swift */,
+				E20C22C32B79697900944B60 /* RagdollTests.swift */,
+				E20C22F52B796DF600944B60 /* BookParserTests.swift */,
+				1809CBFE62C0B4D5E37394BC /* ChapterRuleTests.swift */,
 			);
 			path = RagdollTests;
 			sourceTree = "<group>";
 		};
-		E2BD678F2B7501A7000B142A /* RagdollUITests */ = {
+		E20C22CC2B79697900944B60 /* RagdollUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E2BD67902B7501A7000B142A /* RagdollUITests.swift */,
-				E2BD67922B7501A7000B142A /* RagdollUITestsLaunchTests.swift */,
+				E20C22CD2B79697900944B60 /* RagdollUITests.swift */,
+				E20C22CF2B79697900944B60 /* RagdollUITestsLaunchTests.swift */,
 			);
 			path = RagdollUITests;
+			sourceTree = "<group>";
+		};
+		E20C22DE2B796ADD00944B60 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				E20C22DF2B796ADD00944B60 /* Reading */,
+				E20C22E12B796ADD00944B60 /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		E20C22DF2B796ADD00944B60 /* Reading */ = {
+			isa = PBXGroup;
+			children = (
+				E20C22E02B796ADD00944B60 /* ReadingView.swift */,
+			);
+			path = Reading;
+			sourceTree = "<group>";
+		};
+		E20C22E12B796ADD00944B60 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E20C22E22B796ADD00944B60 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E20C22E52B796AF900944B60 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E20C22E62B796AF900944B60 /* Book */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E20C22E62B796AF900944B60 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				E20C22E72B796AF900944B60 /* Book.swift */,
+				E20C22E82B796AF900944B60 /* Chapter.swift */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		E20C22E92B796AF900944B60 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E23092392B7BFAF20044C0CD /* Extensions */,
+				E20C22EA2B796AF900944B60 /* FileHelper.swift */,
+				E20C22EC2B796AF900944B60 /* Book */,
+				E23092432B7C0D7F0044C0CD /* UserConfig.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E20C22EC2B796AF900944B60 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				E20C22ED2B796AF900944B60 /* BookManager.swift */,
+				E20C22EE2B796AF900944B60 /* BookParser.swift */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		E23092392B7BFAF20044C0CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E230923A2B7BFB100044C0CD /* Data.swift */,
+				E230923C2B7C03630044C0CD /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E23092482B7C1D730044C0CD /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				E23092492B7C1DBF0044C0CD /* ChapterTitleRules.json */,
+				E23092402B7C0CFA0044C0CD /* UserConfigs.swift */,
+			);
+			path = Configs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E2BD67702B7501A6000B142A /* Ragdoll */ = {
+		E20C22AB2B79697800944B60 /* Ragdoll */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2BD67962B7501A7000B142A /* Build configuration list for PBXNativeTarget "Ragdoll" */;
+			buildConfigurationList = E20C22D32B79697900944B60 /* Build configuration list for PBXNativeTarget "Ragdoll" */;
 			buildPhases = (
-				E2BD676D2B7501A6000B142A /* Sources */,
-				E2BD676E2B7501A6000B142A /* Frameworks */,
-				E2BD676F2B7501A6000B142A /* Resources */,
+				E20C22A82B79697800944B60 /* Sources */,
+				E20C22A92B79697800944B60 /* Frameworks */,
+				E20C22AA2B79697800944B60 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Ragdoll;
+			packageProductDependencies = (
+				E230924E2B7CC87B0044C0CD /* Defaults */,
+			);
 			productName = Ragdoll;
-			productReference = E2BD67712B7501A6000B142A /* Ragdoll.app */;
+			productReference = E20C22AC2B79697800944B60 /* Ragdoll.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E2BD67812B7501A7000B142A /* RagdollTests */ = {
+		E20C22BE2B79697900944B60 /* RagdollTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2BD67992B7501A7000B142A /* Build configuration list for PBXNativeTarget "RagdollTests" */;
+			buildConfigurationList = E20C22D62B79697900944B60 /* Build configuration list for PBXNativeTarget "RagdollTests" */;
 			buildPhases = (
-				E2BD677E2B7501A7000B142A /* Sources */,
-				E2BD677F2B7501A7000B142A /* Frameworks */,
-				E2BD67802B7501A7000B142A /* Resources */,
+				E20C22BB2B79697900944B60 /* Sources */,
+				E20C22BC2B79697900944B60 /* Frameworks */,
+				E20C22BD2B79697900944B60 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E2BD67842B7501A7000B142A /* PBXTargetDependency */,
+				E20C22C12B79697900944B60 /* PBXTargetDependency */,
 			);
 			name = RagdollTests;
 			productName = RagdollTests;
-			productReference = E2BD67822B7501A7000B142A /* RagdollTests.xctest */;
+			productReference = E20C22BF2B79697900944B60 /* RagdollTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E2BD678B2B7501A7000B142A /* RagdollUITests */ = {
+		E20C22C82B79697900944B60 /* RagdollUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2BD679C2B7501A7000B142A /* Build configuration list for PBXNativeTarget "RagdollUITests" */;
+			buildConfigurationList = E20C22D92B79697900944B60 /* Build configuration list for PBXNativeTarget "RagdollUITests" */;
 			buildPhases = (
-				E2BD67882B7501A7000B142A /* Sources */,
-				E2BD67892B7501A7000B142A /* Frameworks */,
-				E2BD678A2B7501A7000B142A /* Resources */,
+				E20C22C52B79697900944B60 /* Sources */,
+				E20C22C62B79697900944B60 /* Frameworks */,
+				E20C22C72B79697900944B60 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E2BD678E2B7501A7000B142A /* PBXTargetDependency */,
+				E20C22CB2B79697900944B60 /* PBXTargetDependency */,
 			);
 			name = RagdollUITests;
 			productName = RagdollUITests;
-			productReference = E2BD678C2B7501A7000B142A /* RagdollUITests.xctest */;
+			productReference = E20C22C92B79697900944B60 /* RagdollUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E2BD67692B7501A6000B142A /* Project object */ = {
+		E20C22A42B79697800944B60 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					E2BD67702B7501A6000B142A = {
+					E20C22AB2B79697800944B60 = {
 						CreatedOnToolsVersion = 15.2;
 					};
-					E2BD67812B7501A7000B142A = {
+					E20C22BE2B79697900944B60 = {
 						CreatedOnToolsVersion = 15.2;
-						TestTargetID = E2BD67702B7501A6000B142A;
+						TestTargetID = E20C22AB2B79697800944B60;
 					};
-					E2BD678B2B7501A7000B142A = {
+					E20C22C82B79697900944B60 = {
 						CreatedOnToolsVersion = 15.2;
-						TestTargetID = E2BD67702B7501A6000B142A;
+						TestTargetID = E20C22AB2B79697800944B60;
 					};
 				};
 			};
-			buildConfigurationList = E2BD676C2B7501A6000B142A /* Build configuration list for PBXProject "Ragdoll" */;
+			buildConfigurationList = E20C22A72B79697800944B60 /* Build configuration list for PBXProject "Ragdoll" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -216,36 +338,40 @@
 				en,
 				Base,
 			);
-			mainGroup = E2BD67682B7501A6000B142A;
-			productRefGroup = E2BD67722B7501A6000B142A /* Products */;
+			mainGroup = E20C22A32B79697800944B60;
+			packageReferences = (
+				E230924D2B7CC87B0044C0CD /* XCRemoteSwiftPackageReference "Defaults" */,
+			);
+			productRefGroup = E20C22AD2B79697800944B60 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E2BD67702B7501A6000B142A /* Ragdoll */,
-				E2BD67812B7501A7000B142A /* RagdollTests */,
-				E2BD678B2B7501A7000B142A /* RagdollUITests */,
+				E20C22AB2B79697800944B60 /* Ragdoll */,
+				E20C22BE2B79697900944B60 /* RagdollTests */,
+				E20C22C82B79697900944B60 /* RagdollUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E2BD676F2B7501A6000B142A /* Resources */ = {
+		E20C22AA2B79697800944B60 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2BD677C2B7501A7000B142A /* Preview Assets.xcassets in Resources */,
-				E2BD67792B7501A7000B142A /* Assets.xcassets in Resources */,
+				E230924A2B7C1DBF0044C0CD /* ChapterTitleRules.json in Resources */,
+				E20C22B92B79697900944B60 /* Preview Assets.xcassets in Resources */,
+				E20C22B62B79697900944B60 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2BD67802B7501A7000B142A /* Resources */ = {
+		E20C22BD2B79697900944B60 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2BD678A2B7501A7000B142A /* Resources */ = {
+		E20C22C72B79697900944B60 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,49 +381,63 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E2BD676D2B7501A6000B142A /* Sources */ = {
+		E20C22A82B79697800944B60 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2BD67772B7501A6000B142A /* ContentView.swift in Sources */,
-				E2BD67752B7501A6000B142A /* RagdollApp.swift in Sources */,
+				E20C22B22B79697800944B60 /* ContentView.swift in Sources */,
+				E230923D2B7C03630044C0CD /* String.swift in Sources */,
+				E23092412B7C0CFA0044C0CD /* UserConfigs.swift in Sources */,
+				E20C22F42B796AF900944B60 /* BookParser.swift in Sources */,
+				E20C22E32B796ADD00944B60 /* ReadingView.swift in Sources */,
+				E20C22EF2B796AF900944B60 /* Book.swift in Sources */,
+				E20C22F12B796AF900944B60 /* FileHelper.swift in Sources */,
+				E230923B2B7BFB100044C0CD /* Data.swift in Sources */,
+				E20C22B42B79697800944B60 /* Item.swift in Sources */,
+				E23092442B7C0D7F0044C0CD /* UserConfig.swift in Sources */,
+				E20C22E42B796ADD00944B60 /* HomeView.swift in Sources */,
+				E20C22B02B79697800944B60 /* RagdollApp.swift in Sources */,
+				E20C22F32B796AF900944B60 /* BookManager.swift in Sources */,
+				E20C22F02B796AF900944B60 /* Chapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2BD677E2B7501A7000B142A /* Sources */ = {
+		E20C22BB2B79697900944B60 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2BD67872B7501A7000B142A /* RagdollTests.swift in Sources */,
+				E20C22C42B79697900944B60 /* RagdollTests.swift in Sources */,
+				E20C22F62B796DF600944B60 /* BookParserTests.swift in Sources */,
+				1809CCB9B55E50D04746EC1A /* ChapterRuleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2BD67882B7501A7000B142A /* Sources */ = {
+		E20C22C52B79697900944B60 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2BD67932B7501A7000B142A /* RagdollUITestsLaunchTests.swift in Sources */,
-				E2BD67912B7501A7000B142A /* RagdollUITests.swift in Sources */,
+				E20C22D02B79697900944B60 /* RagdollUITestsLaunchTests.swift in Sources */,
+				E20C22CE2B79697900944B60 /* RagdollUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E2BD67842B7501A7000B142A /* PBXTargetDependency */ = {
+		E20C22C12B79697900944B60 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E2BD67702B7501A6000B142A /* Ragdoll */;
-			targetProxy = E2BD67832B7501A7000B142A /* PBXContainerItemProxy */;
+			target = E20C22AB2B79697800944B60 /* Ragdoll */;
+			targetProxy = E20C22C02B79697900944B60 /* PBXContainerItemProxy */;
 		};
-		E2BD678E2B7501A7000B142A /* PBXTargetDependency */ = {
+		E20C22CB2B79697900944B60 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E2BD67702B7501A6000B142A /* Ragdoll */;
-			targetProxy = E2BD678D2B7501A7000B142A /* PBXContainerItemProxy */;
+			target = E20C22AB2B79697800944B60 /* Ragdoll */;
+			targetProxy = E20C22CA2B79697900944B60 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		E2BD67942B7501A7000B142A /* Debug */ = {
+		E20C22D12B79697900944B60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -360,7 +500,7 @@
 			};
 			name = Debug;
 		};
-		E2BD67952B7501A7000B142A /* Release */ = {
+		E20C22D22B79697900944B60 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -415,7 +555,7 @@
 			};
 			name = Release;
 		};
-		E2BD67972B7501A7000B142A /* Debug */ = {
+		E20C22D42B79697900944B60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -425,6 +565,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ragdoll/Preview Content\"";
+				DEVELOPMENT_TEAM = 5UU658JJ6L;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -432,6 +574,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = chachako.Ragdoll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -440,7 +583,7 @@
 			};
 			name = Debug;
 		};
-		E2BD67982B7501A7000B142A /* Release */ = {
+		E20C22D52B79697900944B60 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -450,6 +593,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ragdoll/Preview Content\"";
+				DEVELOPMENT_TEAM = 5UU658JJ6L;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -457,6 +602,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = chachako.Ragdoll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -465,15 +611,16 @@
 			};
 			name = Release;
 		};
-		E2BD679A2B7501A7000B142A /* Debug */ = {
+		E20C22D72B79697900944B60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5UU658JJ6L;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = chachako.RagdollTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -483,15 +630,16 @@
 			};
 			name = Debug;
 		};
-		E2BD679B2B7501A7000B142A /* Release */ = {
+		E20C22D82B79697900944B60 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5UU658JJ6L;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = chachako.RagdollTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -501,12 +649,13 @@
 			};
 			name = Release;
 		};
-		E2BD679D2B7501A7000B142A /* Debug */ = {
+		E20C22DA2B79697900944B60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5UU658JJ6L;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = chachako.RagdollUITests;
@@ -517,12 +666,13 @@
 			};
 			name = Debug;
 		};
-		E2BD679E2B7501A7000B142A /* Release */ = {
+		E20C22DB2B79697900944B60 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5UU658JJ6L;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = chachako.RagdollUITests;
@@ -536,43 +686,62 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E2BD676C2B7501A6000B142A /* Build configuration list for PBXProject "Ragdoll" */ = {
+		E20C22A72B79697800944B60 /* Build configuration list for PBXProject "Ragdoll" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E2BD67942B7501A7000B142A /* Debug */,
-				E2BD67952B7501A7000B142A /* Release */,
+				E20C22D12B79697900944B60 /* Debug */,
+				E20C22D22B79697900944B60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2BD67962B7501A7000B142A /* Build configuration list for PBXNativeTarget "Ragdoll" */ = {
+		E20C22D32B79697900944B60 /* Build configuration list for PBXNativeTarget "Ragdoll" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E2BD67972B7501A7000B142A /* Debug */,
-				E2BD67982B7501A7000B142A /* Release */,
+				E20C22D42B79697900944B60 /* Debug */,
+				E20C22D52B79697900944B60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2BD67992B7501A7000B142A /* Build configuration list for PBXNativeTarget "RagdollTests" */ = {
+		E20C22D62B79697900944B60 /* Build configuration list for PBXNativeTarget "RagdollTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E2BD679A2B7501A7000B142A /* Debug */,
-				E2BD679B2B7501A7000B142A /* Release */,
+				E20C22D72B79697900944B60 /* Debug */,
+				E20C22D82B79697900944B60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2BD679C2B7501A7000B142A /* Build configuration list for PBXNativeTarget "RagdollUITests" */ = {
+		E20C22D92B79697900944B60 /* Build configuration list for PBXNativeTarget "RagdollUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E2BD679D2B7501A7000B142A /* Debug */,
-				E2BD679E2B7501A7000B142A /* Release */,
+				E20C22DA2B79697900944B60 /* Debug */,
+				E20C22DB2B79697900944B60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E230924D2B7CC87B0044C0CD /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Defaults";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E230924E2B7CC87B0044C0CD /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E230924D2B7CC87B0044C0CD /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = E2BD67692B7501A6000B142A /* Project object */;
+	rootObject = E20C22A42B79697800944B60 /* Project object */;
 }
