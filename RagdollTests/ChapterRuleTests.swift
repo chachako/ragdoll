@@ -12,7 +12,7 @@ final class ChapterRuleTests: XCTestCase {
   func testDefaultConfigs() {
     let config = UserConfigs.chapterTitleRules
     // Assert the expected number of rules
-    XCTAssertEqual(config.count, 26)
+    XCTAssertEqual(config.count, 25)
     // Assert the expected values of the specified rule
     XCTAssertEqual(config[2].id, -3)
     XCTAssertEqual(config[2].enable, false)
