@@ -19,4 +19,9 @@ extension Data {
     ), encoding != 0 else { return nil }
     return .init(rawValue: encoding)
   }
+  
+  mutating func removeUtf8Bom() {
+    let containsBom = self.starts(with: [0xEF, 0xBB, 0xBF])
+    if containsBom { self.removeFirst(3) }
+  }
 }

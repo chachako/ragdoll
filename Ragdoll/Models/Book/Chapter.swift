@@ -14,26 +14,57 @@ import Defaults
 final class Chapter {
   /// The title of the chapter.
   var title: String
-  /// The first character index of the chapter in the book.
-  var startIndex: Int64
-  /// The last character index of the chapter in the book.
-  var endIndex: Int64
+  /// The first character index of the chapter's body in the book. (inclusive)
+  var bodyStart: UInt64
+  /// The last character index of the chapter's body in the book. (exclusive)
+  var bodyEnd: UInt64
   /// The book that the chapter belongs to.
   var book: Book?
   
-  init(title: String, startIndex: Int64, endIndex: Int64) {
+  init(title: String, bodyStart: UInt64, bodyEnd: UInt64) {
     self.title = title
-    self.startIndex = startIndex
-    self.endIndex = endIndex
+    self.bodyStart = bodyStart
+    self.bodyEnd = bodyEnd
+  }
+
+  /// Creates a chapter representing "Preface".
+  /// - Parameter length: The length of the preface body.
+  static func preface(length: UInt64) -> Chapter {
+    Chapter(title: String(localized: "Preface"), bodyStart: 0, bodyEnd: length)
   }
 }
 
 /// A model representing a rule for parsing chapter titles.
-struct ChapterTitleRule: Codable, Defaults.Serializable {
+struct ChapterTitleRule: Codable, Hashable, Defaults.Serializable {
   var id: Int
   var enable: Bool
   var name: String
   var rule: String
   var example: String
   var serialNumber: Int
+
+  static func == (lhs: ChapterTitleRule, rhs: ChapterTitleRule) -> Bool {
+    lhs.rule == rhs.rule
+  }
+
+  func hash(into hasher: inout Hasher) {
+    hasher.combine(rule)
+  }
+  /// Checks if the given input string matches the regular expression for the rule.
+  /// If matches are found, returns an array of ranges representing the matched substrings in the input.
+  ///
+  /// - Parameter input: The input string to test against the rule.
+  /// - Returns: An array of `NSRange` objects representing the ranges of matched substrings in the input,
+  ///            or `nil` if no matches are found.
+  func matches(_ input: String) -> [NSRange]? {
+    do {
+      let regex = try NSRegularExpression(pattern: rule, options: .anchorsMatchLines)
+      let range = NSRange(location: 0, length: input.utf16.count)
+
+      return regex.matches(in: input, options: [], range: range).map { $0.range }
+    } catch {
+      // Handle any errors during regex compilation
+      return nil
+    }
+  }
 }

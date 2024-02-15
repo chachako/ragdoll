@@ -25,4 +25,12 @@ struct DuplicatedDictionary<Key: Hashable, Value> {
   mutating func addValue(_ newValue: Value, forKey key: Key) {
     inner[key, default: []].append(newValue)
   }
+  
+  /// Gets the values associated with the specified key.
+  ///
+  /// - Parameter key: The key whose values will be retrieved.
+  /// - Returns: The values associated with the specified key, or an empty array if no values are found.
+  subscript(key: Key) -> [Value] {
+    inner[key, default: []]
+  }
 }

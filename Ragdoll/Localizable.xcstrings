@@ -1,0 +1,52 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Add Item" : {
+
+    },
+    "Home" : {
+
+    },
+    "Item at %@" : {
+
+    },
+    "Preface" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前言"
+          }
+        }
+      }
+    },
+    "Reader" : {
+
+    },
+    "Select an item" : {
+
+    },
+    "Start Reading" : {
+
+    },
+    "Unknown" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " 未知"
+          }
+        }
+      }
+    },
+    "Welcome to Ragdoll!" : {
+
+    },
+    "导入 TXT 文件" : {
+
+    }
+  },
+  "version" : "1.0"
+}

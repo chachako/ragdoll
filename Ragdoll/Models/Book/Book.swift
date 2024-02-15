@@ -20,13 +20,13 @@ final class Book {
   /// The path to the imported file of the book.
   var importPath: URL?
   /// The number of chapters in the book.
-  var totalChapters: Int64 = 0
+  var totalChapters: Int = 0
   /// The index of the current chapter being read.
   /// - SeeAlso: `totalChapters`
   var currentChapterIndex: Int = 0
   /// The current reading position, which is the index of the
   /// first character displayed on the current page.
-  var readingPosition: Int64 = 0
+  var readingPosition: UInt64 = 0
   /// The date when the book was last updated.
   var updatedDate: Date = Date.now
   /// The list of chapters in the book.

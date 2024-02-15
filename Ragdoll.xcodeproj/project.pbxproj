@@ -33,7 +33,25 @@
 		E23092442B7C0D7F0044C0CD /* UserConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23092432B7C0D7F0044C0CD /* UserConfig.swift */; };
 		E230924A2B7C1DBF0044C0CD /* ChapterTitleRules.json in Resources */ = {isa = PBXBuildFile; fileRef = E23092492B7C1DBF0044C0CD /* ChapterTitleRules.json */; };
 		E230924F2B7CC87B0044C0CD /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = E230924E2B7CC87B0044C0CD /* Defaults */; };
+		E23092542B7E11550044C0CD /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E23092532B7E11550044C0CD /* Localizable.xcstrings */; };
+		E23092562B7E5A970044C0CD /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23092552B7E5A970044C0CD /* Range.swift */; };
+		E23092582B7E5B9F0044C0CD /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23092572B7E5B9F0044C0CD /* Number.swift */; };
+		E230925A2B7E68D70044C0CD /* FileHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23092592B7E68D70044C0CD /* FileHandle.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		E23092502B7E0E910044C0CD /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = text.plist.stringsdict;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyStrings\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		E20C22C02B79697900944B60 /* PBXContainerItemProxy */ = {
@@ -82,6 +100,10 @@
 		E23092402B7C0CFA0044C0CD /* UserConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfigs.swift; sourceTree = "<group>"; };
 		E23092432B7C0D7F0044C0CD /* UserConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfig.swift; sourceTree = "<group>"; };
 		E23092492B7C1DBF0044C0CD /* ChapterTitleRules.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChapterTitleRules.json; sourceTree = "<group>"; };
+		E23092532B7E11550044C0CD /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		E23092552B7E5A970044C0CD /* Range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Range.swift; sourceTree = "<group>"; };
+		E23092572B7E5B9F0044C0CD /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
+		E23092592B7E68D70044C0CD /* FileHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHandle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +165,7 @@
 				E20C22B52B79697900944B60 /* Assets.xcassets */,
 				E20C22BA2B79697900944B60 /* Ragdoll.entitlements */,
 				E20C22B72B79697900944B60 /* Preview Content */,
+				E23092532B7E11550044C0CD /* Localizable.xcstrings */,
 			);
 			path = Ragdoll;
 			sourceTree = "<group>";
@@ -244,6 +267,9 @@
 				E230923A2B7BFB100044C0CD /* Data.swift */,
 				E230923C2B7C03630044C0CD /* String.swift */,
 				1809CD9B7D243190221E374C /* Collection.swift */,
+				E23092552B7E5A970044C0CD /* Range.swift */,
+				E23092572B7E5B9F0044C0CD /* Number.swift */,
+				E23092592B7E68D70044C0CD /* FileHandle.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -269,6 +295,7 @@
 				E20C22AA2B79697800944B60 /* Resources */,
 			);
 			buildRules = (
+				E23092502B7E0E910044C0CD /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -370,6 +397,7 @@
 			files = (
 				E230924A2B7C1DBF0044C0CD /* ChapterTitleRules.json in Resources */,
 				E20C22B92B79697900944B60 /* Preview Assets.xcassets in Resources */,
+				E23092542B7E11550044C0CD /* Localizable.xcstrings in Resources */,
 				E20C22B62B79697900944B60 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,10 +425,13 @@
 			files = (
 				E20C22B22B79697800944B60 /* ContentView.swift in Sources */,
 				E230923D2B7C03630044C0CD /* String.swift in Sources */,
+				E23092582B7E5B9F0044C0CD /* Number.swift in Sources */,
+				E23092562B7E5A970044C0CD /* Range.swift in Sources */,
 				E23092412B7C0CFA0044C0CD /* UserConfigs.swift in Sources */,
 				E20C22F42B796AF900944B60 /* BookParser.swift in Sources */,
 				E20C22E32B796ADD00944B60 /* ReadingView.swift in Sources */,
 				E20C22EF2B796AF900944B60 /* Book.swift in Sources */,
+				E230925A2B7E68D70044C0CD /* FileHandle.swift in Sources */,
 				E20C22F12B796AF900944B60 /* FileHelper.swift in Sources */,
 				E230923B2B7BFB100044C0CD /* Data.swift in Sources */,
 				E20C22B42B79697800944B60 /* Item.swift in Sources */,
