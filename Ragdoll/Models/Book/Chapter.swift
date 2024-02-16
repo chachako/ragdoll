@@ -42,14 +42,15 @@ struct ChapterTitleRule: Codable, Hashable, Defaults.Serializable {
   var rule: String
   var example: String
   var serialNumber: Int
-
-  static func == (lhs: ChapterTitleRule, rhs: ChapterTitleRule) -> Bool {
-    lhs.rule == rhs.rule
+  
+  /// Returns an initialized `NSRegularExpression` instance for the rule.
+  ///
+  /// - Parameter options: The regular expression options that are applied to the expression during matching.
+  ///                      See `NSRegularExpression.Options` for possible values.
+  func regex(options: NSRegularExpression.Options = .anchorsMatchLines) -> NSRegularExpression? {
+    try? NSRegularExpression(pattern: rule, options: options)
   }
-
-  func hash(into hasher: inout Hasher) {
-    hasher.combine(rule)
-  }
+  
   /// Checks if the given input string matches the regular expression for the rule.
   /// If matches are found, returns an array of ranges representing the matched substrings in the input.
   ///
@@ -57,14 +58,15 @@ struct ChapterTitleRule: Codable, Hashable, Defaults.Serializable {
   /// - Returns: An array of `NSRange` objects representing the ranges of matched substrings in the input,
   ///            or `nil` if no matches are found.
   func matches(_ input: String) -> [NSRange]? {
-    do {
-      let regex = try NSRegularExpression(pattern: rule, options: .anchorsMatchLines)
-      let range = NSRange(location: 0, length: input.utf16.count)
+    let range = NSRange(location: 0, length: input.utf16.count)
+    return regex()?.matches(in: input, options: [], range: range).map { $0.range }
+  }
+  
+  static func == (lhs: ChapterTitleRule, rhs: ChapterTitleRule) -> Bool {
+    lhs.rule == rhs.rule
+  }
 
-      return regex.matches(in: input, options: [], range: range).map { $0.range }
-    } catch {
-      // Handle any errors during regex compilation
-      return nil
-    }
+  func hash(into hasher: inout Hasher) {
+    hasher.combine(rule)
   }
 }

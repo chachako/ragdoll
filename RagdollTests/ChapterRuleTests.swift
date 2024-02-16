@@ -21,4 +21,12 @@ final class ChapterRuleTests: XCTestCase {
     XCTAssertEqual(config[2].example, "简介 老夫诸葛村夫")
     XCTAssertEqual(config[2].serialNumber, 2)
   }
+  
+  func testRegexVaildity() {
+    let config = UserConfigs.chapterTitleRules
+    for rule in config {
+      let isValid = rule.regex() != nil
+      XCTAssertTrue(isValid)
+    }
+  }
 }
